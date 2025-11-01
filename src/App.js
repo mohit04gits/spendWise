@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-// Components
+
 import Header from "./components/Header";
 import BudgetTracker from "./components/BudgetTracker";
 import AiCoach from "./components/AiCoach";
@@ -8,7 +8,6 @@ import ExpenseForm from "./components/ExpenseForm";
 import ExpenseList from "./components/ExpenseList";
 
 function App() {
-  // --- STATE MANAGEMENT ---
   const [expenses, setExpenses] = useState(() => {
     const savedExpenses = localStorage.getItem("expenses");
     return savedExpenses ? JSON.parse(savedExpenses) : [];
@@ -139,7 +138,7 @@ Rules:
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white font-sans p-4 sm:p-8">
       <div className="max-w-5xl mx-auto space-y-10">
-        {/* Header */}
+       
         <Header />
 
         {/* Stats + AI Coach */}
