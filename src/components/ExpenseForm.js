@@ -34,7 +34,7 @@ function ExpenseForm({
         {isEditing ? "✏️ Edit Expense" : "➕ Add Expense"}
       </h2>
 
-      {/* Description */}
+   
       <div className="space-y-1">
         <label
           htmlFor="description"
@@ -54,7 +54,6 @@ function ExpenseForm({
         />
       </div>
 
-      {/* Amount */}
       <div className="space-y-1">
         <label
           htmlFor="amount"
@@ -74,7 +73,6 @@ function ExpenseForm({
         />
       </div>
 
-      {/* Category */}
       <div className="space-y-1">
         <label
           htmlFor="category"
@@ -96,7 +94,6 @@ function ExpenseForm({
         </select>
       </div>
 
-      {/* Buttons */}
       <div className="flex flex-col sm:flex-row gap-3 pt-2">
         <button
           type="submit"
