@@ -4,7 +4,6 @@ import { EditIcon, DeleteIcon } from './Icons';
 function ExpenseList({ expenses, filter, setFilter, onEdit, onDelete }) {
   const categories = ["All", "Food", "Transport", "Shopping", "Bills", "Entertainment", "Other"];
 
-  // Color mapping for category badges
   const categoryColors = {
     Food: "bg-green-500/20 text-green-400",
     Transport: "bg-blue-500/20 text-blue-400",
@@ -16,7 +15,6 @@ function ExpenseList({ expenses, filter, setFilter, onEdit, onDelete }) {
 
   return (
     <div className="space-y-6">
-      {/* Header + Filter */}
       <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
         <h2 className="text-2xl font-bold text-gray-200">Recent Expenses</h2>
         <select 
@@ -30,7 +28,6 @@ function ExpenseList({ expenses, filter, setFilter, onEdit, onDelete }) {
         </select>
       </div>
 
-      {/* Expense Cards (scroll after max-h-80) */}
       <div 
         className="space-y-4 max-h-80 overflow-y-auto pr-2 
                    scrollbar-thin scrollbar-hide scrollbar-thumb-gray-700 scrollbar-track-transparent 
@@ -49,7 +46,6 @@ function ExpenseList({ expenses, filter, setFilter, onEdit, onDelete }) {
                          shadow-lg border border-gray-700 hover:border-cyan-500/50 
                          hover:translate-y-[-2px] transition-all duration-300"
             >
-              {/* Expense Details */}
               <div>
                 <p className="font-semibold text-lg text-gray-100 capitalize">{expense.description}</p>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
@@ -60,7 +56,6 @@ function ExpenseList({ expenses, filter, setFilter, onEdit, onDelete }) {
                 </div>
               </div>
               
-              {/* Amount + Actions */}
               <div className="flex items-center gap-4">
                 <p className="font-bold text-xl text-cyan-400">
                   ₹{expense.amount.toFixed(2)}
