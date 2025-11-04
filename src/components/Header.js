@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function Header() {
   return (
     <header className="text-center mb-12">
-      {/* Optional Badge */}
+      
       <motion.div 
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ function Header() {
         💰 Your Personal Finance Buddy
       </motion.div>
 
-      {/* App Title */}
+      
       <motion.h1 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -24,11 +24,11 @@ function Header() {
                    bg-gradient-to-r from-purple-400 via-cyan-400 to-blue-500"
       >
         SpendWise
-        {/* Gradient underline */}
+        
         <span className="absolute left-1/2 -bottom-2 w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full transform -translate-x-1/2"></span>
       </motion.h1>
 
-      {/* Tagline */}
+      
       <motion.p 
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
